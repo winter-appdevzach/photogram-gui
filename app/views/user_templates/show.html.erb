@@ -9,8 +9,16 @@
   <dd><%=@the_user.id%> </dd>
 
   <dt>Edit user</dt>
-  
-  <dd>form goes here</dd>
+    
+  <dd>
+    <form action="/update_username/<%=@the_user.username %>">
+      <label for="browser_image">Username</label>
+      <input id="browser_image" type="text" name="query_username" placeholder="Enter a URL for the image..." value="<%=@the_user.username%>">
+
+
+      <button>Update user</button>
+    </form>
+  </dd>
 
 </dl>
 
